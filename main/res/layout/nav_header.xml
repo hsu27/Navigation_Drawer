@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:layout_below="@+id/profilepic"
+        android:layout_marginTop="18dp"
+        android:text="Andrew Wiggins"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserName"
+        android:text="@string/username"
+        android:textSize="12sp"
+        android:layout_below="@+id/txtName"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFollowingNum"
+        android:text="1234"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFollowing"
+        android:text="Following"
+        android:layout_below="@+id/txtUserName"
+        android:textColor="@color/lightgrey"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtFollowingNum"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFollowerNum"
+        android:text="4567"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtUserName"
+        android:layout_toEndOf="@+id/txtFollowing"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFollower"
+        android:text="Followers"
+        android:layout_below="@+id/txtUserName"
+        android:textColor="@color/lightgrey"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/txtFollowerNum"
+        android:textSize="12sp"/>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFollower" />
+
+
+</RelativeLayout>
